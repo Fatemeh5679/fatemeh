@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta charset="viewport"content="width=device-width,initial-scale=1.0" />
+    <title>فروشگاه کفش</title>
+    <style>
+        body{font-family:'Tahoma',sans-serif;}
+        container{width:80%;margin:auto;}
+        header{background:#333;color:white;padding:10px 0;text-align:center;}
+        product{border:1px solid #ddd;margin: 10px; padding:10px;text-align:center;}
+        product img{max-width:100%;}
+        product-name{font-size:1.2em;color:#333;}
+        product-price{color:#666;}
+        add-to-cart{background:#5cb85c;color:white;border:none;padding:10px 20px;cursor:pointer;}
+        add-to-cart:hover{background:#4cae4c;}
+    </style>
+ </head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>به فروشگاه کفش ما خوش امدید</h1>
+        </header>
+
+        <div class="product">
+            <img src="images/e3624b5cd3a1065a0e505413b9253469d28046d3_1664960228.jpg"width="300" />
+            <h2 class="product-name">کفش راحتی زنانه</h2>
+            <p class="product-price">قیمت:150000تومان</p>
+            <button onclick="addToCart(this)">افزودن به سبد خرید</button>
+        </div>
+        <!--Repeat for other products-->
+
+
+        <footer>
+            <p>تمامی حقوق محفوظ است©فروشگاه کفش ما</p>
+        </footer>
+                
+    </div>
+
+    <script>
+        function addToCart(button) { alert("محصول به سبد خرید اضافه شد!"); }
+    </script>
+</body>
+</html>
